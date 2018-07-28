@@ -15,7 +15,7 @@ Following steps to be performed to run the project:
 Step 1: Install XAMPP on your system
 Step 2: Clone/Download the project and copy project to ..\xampp\htdocs
 Step 3: Open XAMPP Control Panel and start Apache server
-Step 4: To run project browse http://localhost/Crawler/index.html
+Step 4: To run project browse http://localhost/Crawler-master/index.html
 
 ```
 
