@@ -48,7 +48,8 @@ function getDataFromUrl($crawledProprtyUrl,$fileName) {
 		$rooms = preg_replace('/\s+/',',',$roomValue);
 		$rooms = explode(",",$rooms);
 		
-		$data .= $property.";".$address.";".$price.";".$area.";".$rooms[2].";".$rooms[4].PHP_EOL;
+		if($rooms[1]=="Bedroom" || $rooms[1]=="Bedrooms")
+			$data .= $property.";".$address.";".$price.";".$area.";".$rooms[2].";".$rooms[4].PHP_EOL;
 		
 	}
 	fwrite($handle, $data);
